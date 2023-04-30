@@ -1,32 +1,36 @@
-extern int myIntegerVariable = -1;
-extern int x = 0;
-extern int y = 0;
-extern int z = 0;
-extern vector myVariable(x, y, z);
+
+//variables
+int atlanteanVillagerCap = 25;         //try to use variable to find this instead*****
+int greekVillagerCap = 80;
+int norseVillagerCap = 80;
+int dwarfCap = 40;
+int EgyptianVillagerCap = 80;
+
+
+//functions
+
+
+//end functions
 
 void main (void)
 {
-    if (myIntegerVariable == 5)
-    {
-        aiecho("The value is 5");
-    }
-    else if (myIntegerVariable == -1)
-    {
-        aiecho("The value is -1");
-    }
-    else
-    {
-        aiEcho("The value is not equal to 5");
-    }
+    aiEcho("Starting " + cFilename);
+
+    aiEcho("This ai is currently only for Kronos, it is set to " + cMyCiv);
+
+    aiEcho(cCivKronos + " is kronos");
+
+    aiSendChatToEveryone("Fear the wrath of "+ cFilename +"!");
+
 }
 //--------------------------------
 
 /*
-jotunheim map as gaia
+jotunheim map as Kronos
 
-make sure civ == gaia
+make sure civ == Kronos
 check map == jotunheim
-make message declaring this is made for gaia
+make message declaring this is made for Kronos
 
 HuntingDogsMap = check if any moose are visible
 
@@ -46,7 +50,7 @@ if HuntingDogsMap{
 
     fifth vil goes close to first moose (if secondary unavailable) and then hunts it
 
-    rest go to food
+    rest go to food in similar fasion
 
     gold vil builds temple when able
 
